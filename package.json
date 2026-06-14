@@ -1,0 +1,14 @@
+{
+  "name": "ham-radio-site",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "docs:build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "deploy": "wrangler pages deploy docs/.vitepress/dist"
+  },
+  "devDependencies": {
+    "vitepress": "^1.3.0"
+  }
+}
