@@ -60,3 +60,32 @@ export default defineConfig({
     }
   }
 })
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
+  title: '火腿工坊',
+  description: '业余无线电爱好者学习与实践平台',
+  lang: 'zh-CN',
+  
+  // 添加 Giscus 评论
+  head: [
+    ['script', { 
+      src: 'https://giscus.app/client.js',
+      'data-repo': '345604979a666-ai/ham-radio-site',
+      'data-repo-id': 'R_kgDOS6doxA',
+      'data-category': 'Announcements',
+      'data-category-id': 'DIC_kwDOS6doxM4C_LOh',
+      'data-mapping': 'pathname',
+      'data-strict': '0',
+      'data-reactions-enabled': '1',
+      'data-emit-metadata': '0',
+      'data-input-position': 'bottom',
+      'data-theme': 'preferred_color_scheme',
+      'data-lang': 'zh-CN',
+      'crossorigin': 'anonymous',
+      async: 'true'
+    }]
+  ],
+  
+  // ... 其他原有配置 ...
+})
